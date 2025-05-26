@@ -22,3 +22,30 @@ function validar(){
         cargarDatos()
     }
 }
+
+function validarE(valor,elemento,eErroremail){
+    if(valor.length != "@" && ".cl"){
+        eErroremail.innerText = "El correo debe tener @ y .cl"
+        elemento.style.backgroundColor = "red"
+        return "falsa"
+    }else {
+        eErroremail.innerText = ""
+        elemento.style.backgroundColor = "green"
+        return "exito"
+    }
+}
+
+function cargarDatos(index){
+    let persona = personas.map((p,index)=>{
+        return "<tr><td>"+p.vNombre+
+                "</td><td>"+p.vEmail+
+                "</td><td><button type='button' onclick=("+index+")"
+    })
+}
+
+function eliminar(indice){
+    persona = personas.filter((p,indice)=>{
+        
+    })
+}
+
