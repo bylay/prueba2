@@ -35,7 +35,7 @@ function validarE(valor,elemento,eErroremail){
     }
 }
 
-function cargarDatos(index){
+function cargarDatos(){
     let persona = personas.map((p,index)=>{
         return "<tr><td>"+p.vNombre+
                 "</td><td>"+p.vEmail+
@@ -45,7 +45,8 @@ function cargarDatos(index){
 
 function eliminar(indice){
     persona = personas.filter((p,indice)=>{
-        
-    })
+        index != indice}
+    )
+    cargarDatos()
 }
 
